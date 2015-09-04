@@ -1,0 +1,15 @@
+<div bat-vertical-split ng-controller="PerfController" class="perf" ng-class="{disabled: !enabled}">
+
+  <h1>Performance</h1>
+
+  <div>The last digest cycle took {{ lastDigestTime | number }} ms</div>
+  <hr>
+  <h3>Digest timings</h3>
+  <div ng-repeat="watcher in watchTimings">
+    <pre class="left">{{ watcher.text }}</pre>
+    <pre class="right">{{ watcher.time }}</pre>
+  </div>
+  <hr>
+  <h3>Raw data</h3>
+  <pre>{{ perf | json }}</pre>
+</div>

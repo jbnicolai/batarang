@@ -303,3 +303,26 @@ li .status:empty {
   left: -28px;
   margin-top: 3px;
 }
+
+/* Performance tab */
+.perf {
+  overflow: scroll;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.perf.disabled {
+  opacity: 0.5;
+}
+
+.perf .left {
+  width: 45%;
+}
+.perf .right {
+  width: 45%;
+}
+.perf pre {
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
